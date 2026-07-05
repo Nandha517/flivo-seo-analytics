@@ -31,3 +31,87 @@ Only around one in five platforms in the dataset currently have enough verified 
 ## Outputs ##
 
 Running the pipeline produces a cleaned and standardized dataset, a weighted opportunity ranking across all analyzed platforms, a Quick Wins and Long-Term Opportunities breakdown, a sample budget allocation plan, statistical summary tables for Domain Authority, Domain Rating, traffic, and pricing, a full set of charts and word clouds, and a final consolidated Excel report. A separate methodology and findings report documents how the original dataset was compiled, what each pipeline step does and why, what the statistics actually show, and the resulting strategic recommendations for short-term and long-term SEO strategy.
+
+### Free vs Paid Backlink Opportunities
+
+![](images/01_free_vs_paid_pie.png)
+
+### Platforms by Research Category
+
+![](images/02_platforms_per_sheet.png)
+
+# Analytics Visualizations
+
+### Domain Authority Distribution
+
+![](images/03_da_distribution.png)
+
+### Pricing Analysis
+
+![](images/04_pricing_by_category.png)
+
+### Guest Post Acceptance
+
+![](images/05_guest_post_acceptance.png)
+
+### Food & Health Suitability
+
+![](images/06_food_suitability.png)
+
+### Opportunity Score Ranking
+
+![](images/07_opportunity_score_top20.png)
+
+### Pareto Analysis
+
+![](images/08_pareto_analysis.png)
+
+### K-Means Platform Clustering
+
+![](images/09_kmeans_clusters.png)
+
+---
+
+No supervised machine learning methods (logistic regression, random forest, neural networks, decision trees, Naive Bayes, time series, or PCA) are used in this project. This is a deliberate methodological decision rather than a limitation: the dataset has no historical record of which backlinks succeeded or failed, so a supervised model would have nothing valid to learn from and would simply overfit noise on a roughly hundred-row dataset. PCA was excluded because there are only a handful of partially populated numeric fields, too few and too sparse for dimensionality reduction to be meaningful. Unsupervised and transparent methods — clustering, weighted scoring, correlation, and descriptive regression — were used instead because every result can be traced back to its exact inputs, which matters when the output needs to be defended to a non-technical founder audience.
+
+---
+
+# Text Analytics
+
+### Benefits Word Cloud
+
+![](images/10_wc_benefits.png)
+
+### Limitations Word Cloud
+
+![](images/11_wc_limitations.png)
+
+### Recommendation Word Cloud
+
+![](images/12_wc_recommendations.png)
+
+### Food Niche Word Cloud
+
+![](images/13_wc_food_niche.png)
+
+### Top SEO Keywords
+
+![](images/14_top_keywords_benefits.png)
+
+---
+
+# Advanced Analytics
+
+### Regression (Domain Authority vs Domain Rating)
+
+![](images/15_regression_DA_clean_DR_clean.png)
+
+### Regression (Domain Authority vs Traffic)
+
+![](images/15_regression_DA_clean_Traffic_clean.png)
+
+### Cluster Validation
+
+![](images/16_cluster_validation.png)
+
+---
